@@ -1,0 +1,11 @@
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.deps.json
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.dll
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.pdb
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.AssemblyInfoInputs.cache
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.AssemblyInfo.cs
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.csproj.CoreCompileInputs.cache
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.dll
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\refint\TradingCore.dll
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.pdb
+C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\ref\TradingCore.dll
