@@ -1,16 +1,17 @@
 ﻿using TradingCore.Models;
 
-if (args.Length < 4)
+if (args.Length < 5)
 {
-    Console.WriteLine("Usage: SendOrderApp <username> <BUY|SELL> <quantity> <price>");
-    Console.WriteLine("Example: SendOrderApp David BUY 100 10.50");
+    Console.WriteLine("Usage: SendOrderApp <username> <endpoint> <BUY|SELL> <quantity> <price>");
+    Console.WriteLine("Example: SendOrderApp David localhost BUY 100 10.50");
     return;
 }
 
 string username = args[0];
-string sideText = args[1];
-string quantityText = args[2];
-string priceText = args[3];
+string endpoint = args[1]; // kept for assignment compliance / future middleware integration
+string sideText = args[2];
+string quantityText = args[3];
+string priceText = args[4];
 
 if (!Enum.TryParse<OrderSide>(sideText, true, out var side))
 {
@@ -48,6 +49,7 @@ var order = new Order
 
 Console.WriteLine("Order created successfully:");
 Console.WriteLine($"User: {order.Username}");
+Console.WriteLine($"Endpoint: {endpoint}");
 Console.WriteLine($"Stock: {order.Stock}");
 Console.WriteLine($"Side: {order.Side}");
 Console.WriteLine($"Quantity: {order.Quantity}");
