@@ -1,14 +1,24 @@
 ﻿using TradingCore.Models;
 using TradingCore.Services;
 
+if (args.Length < 1)
+{
+    Console.WriteLine("Usage: ExchangeApp <endpoint>");
+    Console.WriteLine("Example: ExchangeApp localhost");
+    return;
+}
+
+string endpoint = args[0]; // kept for assignment compliance / future middleware integration
+
 var orderBook = new OrderBookService();
 
-Console.WriteLine("Exchange started.");
+Console.WriteLine("XYZ Exchange started.");
+Console.WriteLine($"Connected to endpoint: {endpoint}");
 Console.WriteLine("Enter orders in this format:");
 Console.WriteLine("username BUY 100 10.50");
 Console.WriteLine("username SELL 100 10.20");
 Console.WriteLine("Type EXIT to stop.");
-Console.WriteLine();
+Console.WriteLine(new string('-', 50));
 
 while (true)
 {
@@ -25,6 +35,7 @@ while (true)
     if (parts.Length != 4)
     {
         Console.WriteLine("Invalid format. Use: username BUY|SELL 100 price");
+        Console.WriteLine();
         continue;
     }
 
@@ -36,18 +47,28 @@ while (true)
     if (!Enum.TryParse<OrderSide>(sideText, true, out var side))
     {
         Console.WriteLine("Invalid side. Use BUY or SELL.");
+        Console.WriteLine();
         continue;
     }
 
-    if (!int.TryParse(quantityText, out int quantity) || quantity != 100)
+    if (!int.TryParse(quantityText, out int quantity))
     {
-        Console.WriteLine("Quantity must be 100.");
+        Console.WriteLine("Invalid quantity.");
+        Console.WriteLine();
+        continue;
+    }
+
+    if (quantity != 100)
+    {
+        Console.WriteLine("Quantity must be 100 for this assignment.");
+        Console.WriteLine();
         continue;
     }
 
     if (!double.TryParse(priceText, out double price))
     {
         Console.WriteLine("Invalid price.");
+        Console.WriteLine();
         continue;
     }
 
@@ -61,11 +82,16 @@ while (true)
         CreatedAt = DateTime.UtcNow
     };
 
+    Console.WriteLine($"Received order: {order.Username} {order.Side} {order.Quantity} {order.Stock} @ {order.Price:F2}");
+
     var trade = orderBook.ProcessOrder(order);
 
     if (trade == null)
     {
-        Console.WriteLine("No match found. Order added to order book.");
+        Console.WriteLine("No matching opposite-side order found.");
+        Console.WriteLine("Order added to the order book.");
+        Console.WriteLine($"Current buy orders: {orderBook.GetBuyOrders().Count}");
+        Console.WriteLine($"Current sell orders: {orderBook.GetSellOrders().Count}");
     }
     else
     {
@@ -74,9 +100,11 @@ while (true)
         Console.WriteLine($"Buyer: {trade.Buyer}");
         Console.WriteLine($"Seller: {trade.Seller}");
         Console.WriteLine($"Quantity: {trade.Quantity}");
-        Console.WriteLine($"Price: {trade.Price:F2}");
-        Console.WriteLine($"ExecutedAt (UTC): {trade.ExecutedAt:yyyy-MM-dd HH:mm:ss}");
+        Console.WriteLine($"Trade Price: {trade.Price:F2}");
+        Console.WriteLine($"Executed At (UTC): {trade.ExecutedAt:yyyy-MM-dd HH:mm:ss}");
+        Console.WriteLine($"Remaining buy orders: {orderBook.GetBuyOrders().Count}");
+        Console.WriteLine($"Remaining sell orders: {orderBook.GetSellOrders().Count}");
     }
 
-    Console.WriteLine();
+    Console.WriteLine(new string('-', 50));
 }

@@ -16,3 +16,4 @@ C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\refin
 C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.pdb
 C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.genruntimeconfig.cache
 C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ref\ExchangeApp.dll
+C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.sourcelink.json
