@@ -17,3 +17,25 @@ C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\Excha
 C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.genruntimeconfig.cache
 C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ref\ExchangeApp.dll
 C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.sourcelink.json
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.exe
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.deps.json
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.runtimeconfig.json
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.dll
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.pdb
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\TradingCore.dll
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\TradingCore.pdb
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.csproj.AssemblyReference.cache
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.AssemblyInfoInputs.cache
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.AssemblyInfo.cs
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.csproj.CoreCompileInputs.cache
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.sourcelink.json
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\Exchange.5888044E.Up2Date
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.dll
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\refint\ExchangeApp.dll
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.pdb
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.genruntimeconfig.cache
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ref\ExchangeApp.dll
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\RabbitMQ.Client.dll
+C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\System.Threading.RateLimiting.dll

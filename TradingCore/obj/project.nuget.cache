@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "DRi5YZ+s+LI=",
+  "dgSpecHash": "XNgwUf6OfzE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Tia Darvell\\OneDrive\\Documents\\GitHub\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tia Darvell\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\Tia Darvell\\.nuget\\packages\\rabbitmq.client\\7.2.1\\rabbitmq.client.7.2.1.nupkg.sha512",
+    "C:\\Users\\Tia Darvell\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
