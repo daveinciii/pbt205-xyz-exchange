@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>XYZ Exchange Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #0f172a;
+            color: #f8fafc;
+        }
+
+        .card {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        .price {
+            font-size: 56px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #38bdf8;
+        }
+
+        .row {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .status {
+            margin-top: 16px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .recent {
+            margin-top: 30px;
+        }
+
+        .recent h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .trade {
+            padding: 10px 12px;
+            border-radius: 10px;
+            background: #334155;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>XYZ Corp - Latest Trade</h1>
+        <div class="price" id="price">$--.--</div>
+
+        <div class="row"><span class="label">Buyer:</span> <span id="buyer">-</span></div>
+        <div class="row"><span class="label">Seller:</span> <span id="seller">-</span></div>
+        <div class="row"><span class="label">Quantity:</span> <span id="quantity">-</span></div>
+        <div class="row"><span class="label">Time:</span> <span id="time">-</span></div>
+
+        <div class="status" id="status">Waiting for trades...</div>
+
+        <div class="recent">
+            <h2>Recent Trades</h2>
+            <div id="recentTrades"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+    <script>
+        const priceEl = document.getElementById("price");
+        const buyerEl = document.getElementById("buyer");
+        const sellerEl = document.getElementById("seller");
+        const quantityEl = document.getElementById("quantity");
+        const timeEl = document.getElementById("time");
+        const statusEl = document.getElementById("status");
+        const recentTradesEl = document.getElementById("recentTrades");
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/tradehub")
+            .build();
+
+        connection.on("ReceiveTrade", function (trade) {
+            priceEl.textContent = `$${Number(trade.price).toFixed(2)}`;
+            buyerEl.textContent = trade.buyer;
+            sellerEl.textContent = trade.seller;
+            quantityEl.textContent = trade.quantity;
+            timeEl.textContent = new Date(trade.executedAt).toLocaleTimeString();
+            statusEl.textContent = "Live updates connected";
+
+            const item = document.createElement("div");
+            item.className = "trade";
+            item.textContent = `${trade.buyer} bought from ${trade.seller} | ${trade.stock} | ${trade.quantity} @ $${Number(trade.price).toFixed(2)}`;
+            recentTradesEl.prepend(item);
+
+            while (recentTradesEl.children.length > 5) {
+                recentTradesEl.removeChild(recentTradesEl.lastChild);
+            }
+        });
+
+        connection.start()
+            .then(() => statusEl.textContent = "Connected. Waiting for trades...")
+            .catch(err => {
+                console.error(err.toString());
+                statusEl.textContent = "Connection failed";
+            });
+    </script>
+</body>
+</html>

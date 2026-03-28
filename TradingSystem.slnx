@@ -2,4 +2,5 @@
   <Project Path="ExchangeApp/ExchangeApp.csproj" />
   <Project Path="SendOrderApp/SendOrderApp.csproj" />
   <Project Path="TradingCore/TradingCore.csproj" />
+  <Project Path="TradingGuiApp/TradingGuiApp.csproj" />
 </Solution>
