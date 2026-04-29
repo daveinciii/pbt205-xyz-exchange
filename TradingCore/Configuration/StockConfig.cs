@@ -1,4 +1,6 @@
 using Newtonsoft.Json;
+using TradingCore.Cli;
+
 
 namespace TradingCore.Configuration
 {
@@ -65,8 +67,7 @@ namespace TradingCore.Configuration
             var path = FindConfigFile();
             if (path == null)
             {
-                Console.WriteLine($"[StockConfig] {ConfigFileName} not found — using defaults: " +
-                                  $"{string.Join(", ", DefaultStocks)}");
+                ConsoleUi.Box("StockConfig", $"{ConfigFileName} not found — using defaults: {string.Join(", ", DefaultStocks)}");
                 return DefaultStocks;
             }
 
@@ -78,7 +79,7 @@ namespace TradingCore.Configuration
 
                 if (stocks == null || stocks.Count == 0)
                 {
-                    Console.WriteLine($"[StockConfig] No stocks defined in {path} — using defaults.");
+                    ConsoleUi.Box("StockConfig", $"No stocks defined in config — using defaults.");
                     return DefaultStocks;
                 }
 
@@ -91,17 +92,16 @@ namespace TradingCore.Configuration
 
                 if (clean.Count == 0)
                 {
-                    Console.WriteLine($"[StockConfig] All entries in {path} were blank — using defaults.");
+                    ConsoleUi.Box("StockConfig", "All entries blank — using defaults.");
                     return DefaultStocks;
                 }
 
-                Console.WriteLine($"[StockConfig] Loaded {clean.Count} stocks from {path}: " +
-                                  $"{string.Join(", ", clean)}");
+                ConsoleUi.Box("StockConfig", $"Loaded {clean.Count} stocks: {string.Join(", ", clean)}");
                 return clean;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"[StockConfig] Failed to read {path}: {ex.Message} — using defaults.");
+                ConsoleUi.Error($"StockConfig failed to read {path}: {ex.Message} — using defaults.");
                 return DefaultStocks;
             }
         }

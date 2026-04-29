@@ -2,7 +2,7 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using Newtonsoft.Json;
 using System.Text;
-// Note: System.Security.Cryptography.X509Certificates was removed — not required here
+using TradingCore.Cli;
 
 namespace TradingCore.Services
 {
@@ -10,7 +10,7 @@ namespace TradingCore.Services
     // Wraps RabbitMQ connection logic for publishing and subscribing.
     // Each "topic" in the assignment maps to a RabbitMQ fanout exchange —
     // fanout broadcasts every message to ALL subscribers.
-    public class RabbitMQService:IDisposable
+    public class RabbitMQService : IDisposable
     {
         // Holds the TCP connection to the RabbitMQ broker
         private readonly IConnection _connection;
@@ -21,17 +21,18 @@ namespace TradingCore.Services
         // Topic names matching the assignment spec
         public const string ORDERS_TOPIC = "orders";
         public const string TRADES_TOPIC = "trades";
-        
+
         public RabbitMQService(string host = "localhost", int port = 5672)
         {
             var factory = new ConnectionFactory
             {
                 HostName = host,
-                Port = port 
+                Port = port
             };
+
             // --- MIDDLEWARE ADDITION ---
             // RabbitMQ.Client v7 uses async API — .GetAwaiter().GetResult() blocks
-            // the thread so the constructor stays synchronous
+            // the thread so the constructor stays synchronous.
             _connection = factory.CreateConnectionAsync().GetAwaiter().GetResult();
             _channel = _connection.CreateChannelAsync().GetAwaiter().GetResult();
 
@@ -41,10 +42,8 @@ namespace TradingCore.Services
             // Safe to call multiple times — will not overwrite an existing exchange.
             _channel.ExchangeDeclareAsync(ORDERS_TOPIC, ExchangeType.Fanout, durable: true).GetAwaiter().GetResult();
             _channel.ExchangeDeclareAsync(TRADES_TOPIC, ExchangeType.Fanout, durable: true).GetAwaiter().GetResult();
-        
-            Console.WriteLine($"┌─ RABBITMQ ───────────────────────────────┐");
-            Console.WriteLine($"  Connected to {host}:{port}");
-            Console.WriteLine($"└──────────────────────────────────────────┘");
+
+            ConsoleUi.Box("RabbitMQ", $"Connected to {host}:{port}");
         }
 
         // --- MIDDLEWARE ADDITION ---
@@ -53,7 +52,7 @@ namespace TradingCore.Services
         {
             // --- MIDDLEWARE ADDITION ---
             // Serialise the object to JSON — StringEnumConverter ensures enums
-            // appear as "BUY"/"SELL" rather than integers in the message payload
+            // appear as "BUY"/"SELL" rather than integers in the message payload.
             var json = JsonConvert.SerializeObject(message);
             var body = Encoding.UTF8.GetBytes(json);
 
@@ -68,23 +67,21 @@ namespace TradingCore.Services
 
             // --- MIDDLEWARE ADDITION ---
             // routingKey is empty — fanout exchanges ignore routing keys and
-            // broadcast to every bound queue automatically
+            // broadcast to every bound queue automatically.
             _channel.BasicPublishAsync(
-                exchange: exchange, 
-                routingKey: string.Empty, 
+                exchange: exchange,
+                routingKey: string.Empty,
                 mandatory: false,
-                basicProperties: props, 
+                basicProperties: props,
                 body: body
             ).GetAwaiter().GetResult();
 
-            Console.WriteLine($"┌─ RABBITMQ ───────────────────────────────┐");
-            Console.WriteLine($"│ Published to '{exchange}' topic.           │");
-            Console.WriteLine($"└──────────────────────────────────────────┘");
+            ConsoleUi.Box("RabbitMQ", $"Published to '{exchange}' topic.");
         }
 
-        // --- MIDDLEWARE ADDITION
-        /// Subscribes to an exchange. Creates a unique temporary queue for this
-        /// subscriber so every subscriber gets its own copy of each message.
+        // --- MIDDLEWARE ADDITION ---
+        // Subscribes to an exchange. Creates a unique temporary queue for this
+        // subscriber so every subscriber gets its own copy of each message.
         public void Subscribe<T>(string exchange, Action<T> onMessage)
         {
             // --- MIDDLEWARE ADDITION ---
@@ -92,23 +89,25 @@ namespace TradingCore.Services
             // exclusive: true — only this connection can use it.
             // autoDelete: true — queue is deleted when this connection closes.
             var queueName = _channel.QueueDeclareAsync(
-                queue: string.Empty, 
-                durable: false, 
-                exclusive: true, 
-                autoDelete: true 
+                queue: string.Empty,
+                durable: false,
+                exclusive: true,
+                autoDelete: true
             ).GetAwaiter().GetResult().QueueName;
-            
-            // Bind the queue to the fanout exchange — routingKey ignored by fanout
+
+            // Bind the queue to the fanout exchange — routingKey ignored by fanout.
             _channel.QueueBindAsync(queueName, exchange, routingKey: string.Empty).GetAwaiter().GetResult();
 
             // --- MIDDLEWARE ADDITION ---
-            // AsyncEventingBasicConsumer replaces EventingBasicConsumer from v6
+            // AsyncEventingBasicConsumer replaces EventingBasicConsumer from v6.
+            // The handler returns Task.CompletedTask explicitly because no await is
+            // needed — keeping the lambda non-async silences a CS1998 warning.
             var consumer = new AsyncEventingBasicConsumer(_channel);
-            consumer.ReceivedAsync += async (_, ea) =>
+            consumer.ReceivedAsync += (_, ea) =>
             {
                 try
                 {
-                    // Deserialise the raw bytes back into the expected type T
+                    // Deserialise the raw bytes back into the expected type T.
                     var json = Encoding.UTF8.GetString(ea.Body.ToArray());
                     var obj = JsonConvert.DeserializeObject<T>(json);
                     if (obj != null)
@@ -118,20 +117,17 @@ namespace TradingCore.Services
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"┌─ RABBITMQ ERROR ─────────────────────────┐");
-                    Console.WriteLine($"  Deserialisation error: {ex.Message,-19}");
-                    Console.WriteLine($"└──────────────────────────────────────────┘");
+                    ConsoleUi.Error($"Deserialisation error: {ex.Message}");
                 }
+                return Task.CompletedTask;
             };
 
-            // autoAck: true — messages are acknowledged automatically on receipt
-            _channel.BasicConsumeAsync(queueName, autoAck: true, consumer:consumer).GetAwaiter().GetResult();
-            Console.WriteLine($"┌─ RABBITMQ ───────────────────────────────┐");
-            Console.WriteLine($"|  Subscribed to '{exchange}' topic.          |");    
-            Console.WriteLine($"└──────────────────────────────────────────┘");
+            // autoAck: true — messages are acknowledged automatically on receipt.
+            _channel.BasicConsumeAsync(queueName, autoAck: true, consumer: consumer).GetAwaiter().GetResult();
+            ConsoleUi.Box("RabbitMQ", $"Subscribed to '{exchange}' topic.");
         }
 
-         // Clean up channel and connection when the using block ends
+        // Clean up channel and connection when the using block ends.
         public void Dispose()
         {
             _channel?.CloseAsync().GetAwaiter().GetResult();
