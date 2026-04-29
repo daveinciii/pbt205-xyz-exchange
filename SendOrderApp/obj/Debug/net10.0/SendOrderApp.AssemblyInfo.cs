@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SendOrderApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9fc8e7c4b585bb074a3fc63c9ae5194931c3175")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf3236291042d65a461abf4200c69ea6a9297059")]
 [assembly: System.Reflection.AssemblyProductAttribute("SendOrderApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SendOrderApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
