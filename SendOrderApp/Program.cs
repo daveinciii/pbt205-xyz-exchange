@@ -3,18 +3,28 @@ using TradingCore.Configuration;
 using TradingCore.Models;
 using TradingCore.Services;
 
-if (args.Length < 5)
+// Stage 2.1: stock is now a required positional argument (FR-01).
+// Argument order is: username, endpoint, stock, side, quantity, price.
+// This is a breaking change from the A1 / Stage 1 5-arg signature —
+// the old form is rejected with a clear usage message rather than
+// silently misinterpreting the arguments.
+
+if (args.Length < 6)
 {
-    Console.WriteLine("Usage: SendOrderApp <username> <endpoint> <BUY|SELL> <quantity> <price>");
-    Console.WriteLine("Example: SendOrderApp David localhost BUY 100 10.50");
+    ConsoleUi.Error($"Missing arguments. Got {args.Length}, need 6.");
+    ConsoleUi.Box("Usage",
+        "SendOrderApp <username> <endpoint> <stock> <side> <qty> <price>",
+        "Example: SendOrderApp David localhost XYZ BUY 100 10.50",
+        $"Stocks: {string.Join(", ", StockConfig.Stocks)}");
     return;
 }
 
 string username     = args[0];
 string endpoint     = args[1];
-string sideText     = args[2];
-string quantityText = args[3];
-string priceText    = args[4];
+string stockText    = args[2];
+string sideText     = args[3];
+string quantityText = args[4];
+string priceText    = args[5];
 
 // Parse the endpoint into host and port. Supports "localhost" (defaults to
 // 5672) and "localhost:5672" formats — useful when the broker isn't on the
@@ -22,6 +32,17 @@ string priceText    = args[4];
 var parts = endpoint.Split(':');
 string host = parts[0];
 int port    = parts.Length == 2 && int.TryParse(parts[1], out int parsedPort) ? parsedPort : 5672;
+
+// FR-01: validate the stock symbol against the configured list before doing
+// any other work. Catching a typo here means we never publish a poison
+// message to the orders exchange.
+if (!StockConfig.IsValid(stockText))
+{
+    ConsoleUi.Error(
+        $"Unknown stock '{stockText}'. Configured: {string.Join(", ", StockConfig.Stocks)}");
+    return;
+}
+string stockSymbol = StockConfig.Normalise(stockText);
 
 if (!Enum.TryParse<OrderSide>(sideText, true, out var side))
 {
@@ -48,21 +69,10 @@ if (!double.TryParse(priceText, out double price))
     return;
 }
 
-// FR-01 validation hook: validate the stock symbol against the configured list
-// before publishing. In Stage 1 the symbol is still hardcoded to "XYZ" —
-// Stage 2.1 promotes it to a required positional argument. Either way the
-// validation path is the same.
-const string stockSymbol = "XYZ";
-if (!StockConfig.IsValid(stockSymbol))
-{
-    ConsoleUi.Error($"Stock '{stockSymbol}' is not configured. Edit tradingsystem.config.json.");
-    return;
-}
-
 var order = new Order
 {
     Username  = username,
-    Stock     = StockConfig.Normalise(stockSymbol),
+    Stock     = stockSymbol,
     Side      = side,
     Quantity  = quantity,
     Price     = price,
@@ -72,7 +82,7 @@ var order = new Order
 ConsoleUi.Box("Order created",
     $"User:     {order.Username,-10}  Stock:    {order.Stock}",
     $"Side:     {order.Side,-10}  Qty:      {order.Quantity}",
-    $"Price:    ${order.Price,-8:F2} Endpoint: {endpoint}",
+    $"Price:    ${order.Price,-8:F2}  Endpoint: {endpoint}",
     $"Time:     {order.CreatedAt:yyyy-MM-dd HH:mm:ss} UTC");
 
 // Connect to RabbitMQ and publish the order to the 'orders' fanout exchange.
@@ -83,5 +93,5 @@ using var mq = new RabbitMQService(host, port);
 mq.Publish(RabbitMQService.ORDERS_TOPIC, order);
 
 ConsoleUi.Box("Submitted",
-    "Order sent to XYZ Exchange via RabbitMQ.",
+    $"{order.Side} {order.Quantity} {order.Stock} @ ${order.Price:F2} sent to exchange.",
     "Exiting...");

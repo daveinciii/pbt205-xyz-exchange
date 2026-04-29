@@ -48,11 +48,23 @@ namespace TradingCore.Cli
         // Error box — distinct double-bar style so failures stand out in the demo.
         public static void Error(string message)
         {
-            var top    = "╓─ ERROR " + new string('─', InnerWidth - 6) + "─╖";
-            var bottom = "╙─" + new string('─', InnerWidth) + "─╜";
-            Console.WriteLine(top);
-            WriteBodyLine(message);
-            Console.WriteLine(bottom);
+            // Build header "╓─ ERROR ───...─╖" using the same width algorithm as
+            // the regular Box header. This guarantees top, body, and bottom rows
+            // all line up — earlier hand-rolled arithmetic produced mismatched
+            // top/bottom widths and a body right-border that didn't reach the
+            // corner.
+            var labelled = "─ ERROR ";
+            var fillLen = InnerWidth + 2 - labelled.Length;
+            if (fillLen < 0) fillLen = 0;
+
+            Console.WriteLine("╓" + labelled + new string('─', fillLen) + "╖");
+
+            // Body line uses double-bar borders to match the header's ╓ ╖ corners.
+            // Trim or pad the message to exactly InnerWidth visible characters.
+            var line = message.Length > InnerWidth ? message.Substring(0, InnerWidth) : message;
+            Console.WriteLine("║ " + line.PadRight(InnerWidth) + " ║");
+
+            Console.WriteLine("╙─" + new string('─', InnerWidth) + "─╜");
         }
 
         // ---- internals ------------------------------------------------------
