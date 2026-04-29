@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ibuERIRQR98=",
+  "dgSpecHash": "aIsPAmchY8k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\ExchangeApp\\ExchangeApp.csproj",
+  "projectFilePath": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/ExchangeApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\daver\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
-    "C:\\Users\\daver\\.nuget\\packages\\rabbitmq.client\\7.2.1\\rabbitmq.client.7.2.1.nupkg.sha512",
-    "C:\\Users\\daver\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
+    "/Users/tiadarvell/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512",
+    "/Users/tiadarvell/.nuget/packages/rabbitmq.client/7.2.1/rabbitmq.client.7.2.1.nupkg.sha512",
+    "/Users/tiadarvell/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

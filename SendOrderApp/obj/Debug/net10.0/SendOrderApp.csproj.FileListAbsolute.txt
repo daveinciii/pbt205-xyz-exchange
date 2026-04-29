@@ -1,44 +1,66 @@
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.exe
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.deps.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.runtimeconfig.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\TradingCore.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\TradingCore.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.csproj.AssemblyReference.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.AssemblyInfoInputs.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.AssemblyInfo.cs
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.csproj.CoreCompileInputs.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrde.D988DEFA.Up2Date
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\refint\SendOrderApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.genruntimeconfig.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\ref\SendOrderApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.sourcelink.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.exe
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.deps.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.runtimeconfig.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\SendOrderApp.pdb
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\TradingCore.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\TradingCore.pdb
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.csproj.AssemblyReference.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.AssemblyInfoInputs.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.AssemblyInfo.cs
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.csproj.CoreCompileInputs.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.sourcelink.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrde.D988DEFA.Up2Date
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\refint\SendOrderApp.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.pdb
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\SendOrderApp.genruntimeconfig.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\obj\Debug\net10.0\ref\SendOrderApp.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\Newtonsoft.Json.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\RabbitMQ.Client.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\System.Threading.RateLimiting.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\Newtonsoft.Json.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\RabbitMQ.Client.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\SendOrderApp\bin\Debug\net10.0\System.Threading.RateLimiting.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.exe
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.deps.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.runtimeconfig.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/TradingCore.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/TradingCore.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.csproj.AssemblyReference.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.AssemblyInfoInputs.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.AssemblyInfo.cs
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.csproj.CoreCompileInputs.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrde.D988DEFA.Up2Date
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/refint/SendOrderApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.genruntimeconfig.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/ref/SendOrderApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.sourcelink.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.exe
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.deps.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.runtimeconfig.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.pdb
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/TradingCore.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/TradingCore.pdb
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.csproj.AssemblyReference.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.AssemblyInfoInputs.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.AssemblyInfo.cs
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.csproj.CoreCompileInputs.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.sourcelink.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrde.D988DEFA.Up2Date
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/refint/SendOrderApp.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.pdb
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.genruntimeconfig.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/ref/SendOrderApp.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/Newtonsoft.Json.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/RabbitMQ.Client.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/System.Threading.RateLimiting.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/Newtonsoft.Json.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/RabbitMQ.Client.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/System.Threading.RateLimiting.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.deps.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.runtimeconfig.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/SendOrderApp.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/Newtonsoft.Json.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/RabbitMQ.Client.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/System.Threading.RateLimiting.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/TradingCore.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/bin/Debug/net10.0/TradingCore.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.csproj.AssemblyReference.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.AssemblyInfoInputs.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.AssemblyInfo.cs
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.csproj.CoreCompileInputs.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.sourcelink.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrde.D988DEFA.Up2Date
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/refint/SendOrderApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/SendOrderApp.genruntimeconfig.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/SendOrderApp/obj/Debug/net10.0/ref/SendOrderApp.dll

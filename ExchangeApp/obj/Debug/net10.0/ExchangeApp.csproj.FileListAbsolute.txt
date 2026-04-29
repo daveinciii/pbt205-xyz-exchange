@@ -1,44 +1,66 @@
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.exe
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.deps.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.runtimeconfig.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\TradingCore.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\TradingCore.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.csproj.AssemblyReference.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.AssemblyInfoInputs.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.AssemblyInfo.cs
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.csproj.CoreCompileInputs.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\Exchange.5888044E.Up2Date
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\refint\ExchangeApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.genruntimeconfig.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ref\ExchangeApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.sourcelink.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.exe
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.deps.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.runtimeconfig.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\ExchangeApp.pdb
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\TradingCore.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\TradingCore.pdb
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.csproj.AssemblyReference.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.AssemblyInfoInputs.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.AssemblyInfo.cs
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.csproj.CoreCompileInputs.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.sourcelink.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\Exchange.5888044E.Up2Date
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\refint\ExchangeApp.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.pdb
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ExchangeApp.genruntimeconfig.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\obj\Debug\net10.0\ref\ExchangeApp.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\Newtonsoft.Json.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\RabbitMQ.Client.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\System.Threading.RateLimiting.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\Newtonsoft.Json.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\RabbitMQ.Client.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\ExchangeApp\bin\Debug\net10.0\System.Threading.RateLimiting.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.exe
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.deps.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.runtimeconfig.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/TradingCore.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/TradingCore.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.csproj.AssemblyReference.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.AssemblyInfoInputs.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.AssemblyInfo.cs
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.csproj.CoreCompileInputs.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/Exchange.5888044E.Up2Date
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/refint/ExchangeApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.genruntimeconfig.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ref/ExchangeApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.sourcelink.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.exe
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.deps.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.runtimeconfig.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.pdb
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/TradingCore.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/TradingCore.pdb
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.csproj.AssemblyReference.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.AssemblyInfoInputs.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.AssemblyInfo.cs
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.csproj.CoreCompileInputs.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.sourcelink.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/Exchange.5888044E.Up2Date
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/refint/ExchangeApp.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.pdb
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.genruntimeconfig.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ref/ExchangeApp.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/Newtonsoft.Json.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/RabbitMQ.Client.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/System.Threading.RateLimiting.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/Newtonsoft.Json.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/RabbitMQ.Client.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/System.Threading.RateLimiting.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.deps.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.runtimeconfig.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/ExchangeApp.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/Newtonsoft.Json.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/RabbitMQ.Client.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/System.Threading.RateLimiting.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/TradingCore.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/bin/Debug/net10.0/TradingCore.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.csproj.AssemblyReference.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.AssemblyInfoInputs.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.AssemblyInfo.cs
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.csproj.CoreCompileInputs.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.sourcelink.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/Exchange.5888044E.Up2Date
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/refint/ExchangeApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ExchangeApp.genruntimeconfig.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/Debug/net10.0/ref/ExchangeApp.dll

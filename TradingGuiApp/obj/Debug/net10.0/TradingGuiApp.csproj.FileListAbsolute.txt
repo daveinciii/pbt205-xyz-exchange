@@ -1,40 +1,80 @@
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\appsettings.Development.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\appsettings.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingGuiApp.staticwebassets.runtime.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingGuiApp.staticwebassets.endpoints.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingGuiApp.exe
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingGuiApp.deps.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingGuiApp.runtimeconfig.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingGuiApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingGuiApp.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\Microsoft.AspNetCore.Http.Connections.Client.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\Microsoft.AspNetCore.SignalR.Client.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\Newtonsoft.Json.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\RabbitMQ.Client.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingCore.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\bin\Debug\net10.0\TradingCore.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.csproj.AssemblyReference.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.AssemblyInfoInputs.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.AssemblyInfo.cs
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.csproj.CoreCompileInputs.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.sourcelink.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\rjimswa.dswa.cache.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\scopedcss\bundle\TradingGuiApp.styles.css
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\compressed\30vr4tla9t-{0}-bg9br1g3cw-bg9br1g3cw.gz
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\staticwebassets.build.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\staticwebassets.build.json.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\staticwebassets.development.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\staticwebassets.build.endpoints.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingG.D7A9113A.Up2Date
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\refint\TradingGuiApp.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\TradingGuiApp.genruntimeconfig.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingGuiApp\obj\Debug\net10.0\ref\TradingGuiApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/appsettings.Development.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/appsettings.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.staticwebassets.runtime.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.staticwebassets.endpoints.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.exe
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.deps.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.runtimeconfig.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Microsoft.AspNetCore.SignalR.Client.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Newtonsoft.Json.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/RabbitMQ.Client.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingCore.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingCore.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.csproj.AssemblyReference.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rpswa.dswa.cache.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.AssemblyInfoInputs.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.AssemblyInfo.cs
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.csproj.CoreCompileInputs.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.sourcelink.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rjimswa.dswa.cache.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/scopedcss/bundle/TradingGuiApp.styles.css
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/compressed/30vr4tla9t-{0}-bg9br1g3cw-bg9br1g3cw.gz
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.build.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.build.json.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.development.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/swae.build.ex.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingG.D7A9113A.Up2Date
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/refint/TradingGuiApp.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.genruntimeconfig.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/ref/TradingGuiApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/appsettings.Development.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/appsettings.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.staticwebassets.runtime.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.staticwebassets.endpoints.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.deps.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.runtimeconfig.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingGuiApp.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Microsoft.AspNetCore.Http.Connections.Client.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Microsoft.AspNetCore.SignalR.Client.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Microsoft.AspNetCore.SignalR.Client.Core.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Newtonsoft.Json.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/RabbitMQ.Client.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingCore.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/TradingCore.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.csproj.AssemblyReference.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rpswa.dswa.cache.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.AssemblyInfoInputs.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.AssemblyInfo.cs
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.csproj.CoreCompileInputs.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.MvcApplicationPartsAssemblyInfo.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.sourcelink.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rjimswa.dswa.cache.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/scopedcss/bundle/TradingGuiApp.styles.css
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/compressed/30vr4tla9t-{0}-trntq98inp-trntq98inp.gz
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.build.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.build.json.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.development.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.build.endpoints.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/swae.build.ex.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingG.D7A9113A.Up2Date
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/refint/TradingGuiApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.genruntimeconfig.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/ref/TradingGuiApp.dll

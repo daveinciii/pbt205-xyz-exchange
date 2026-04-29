@@ -1,29 +1,42 @@
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.deps.json
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.AssemblyInfoInputs.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.AssemblyInfo.cs
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.csproj.CoreCompileInputs.cache
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\refint\TradingCore.dll
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.pdb
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\ref\TradingCore.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.deps.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.AssemblyInfoInputs.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.AssemblyInfo.cs
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.csproj.CoreCompileInputs.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/refint/TradingCore.dll
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.pdb
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/ref/TradingCore.dll
 <<<<<<< HEAD
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.sourcelink.json
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.sourcelink.json
 =======
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.deps.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\bin\Debug\net10.0\TradingCore.pdb
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.AssemblyInfoInputs.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.AssemblyInfo.cs
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.csproj.CoreCompileInputs.cache
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.sourcelink.json
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\refint\TradingCore.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.pdb
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\ref\TradingCore.dll
-C:\Users\Tia Darvell\OneDrive\Documents\GitHub\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.csproj.AssemblyReference.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.deps.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.pdb
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.AssemblyInfoInputs.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.AssemblyInfo.cs
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.csproj.CoreCompileInputs.cache
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.sourcelink.json
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/refint/TradingCore.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.pdb
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/ref/TradingCore.dll
+C:/Users/Tia Darvell/OneDrive/Documents/GitHub/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.csproj.AssemblyReference.cache
 >>>>>>> 9e04ec38896a0c0a47db929631f4830e6cd3ea12
-C:\Users\daver\Documents\pbt205-xyz-exchange\TradingCore\obj\Debug\net10.0\TradingCore.csproj.AssemblyReference.cache
+C:/Users/daver/Documents/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.csproj.AssemblyReference.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.deps.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/bin/Debug/net10.0/TradingCore.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.csproj.AssemblyReference.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.AssemblyInfoInputs.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.AssemblyInfo.cs
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.csproj.CoreCompileInputs.cache
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.sourcelink.json
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/refint/TradingCore.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/TradingCore.pdb
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/Debug/net10.0/ref/TradingCore.dll

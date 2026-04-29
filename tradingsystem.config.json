@@ -1,0 +1,8 @@
+{
+  "_comment": "Configurable stock list for the XYZ Exchange. Edit this file to add or remove stocks. Symbols are case-insensitive but normalised to upper case at load time.",
+  "Stocks": [
+    "XYZ",
+    "ABC",
+    "DEF"
+  ]
+}
