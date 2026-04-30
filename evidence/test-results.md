@@ -67,3 +67,29 @@ exchange → ExchangeApp → matched → 'trades' exchange → GUI listener
 → SignalR broadcast.
 
 **Evidence:** evidence/stage-3-trade-broadcast.png
+
+## Stage 3.2 — SignalR end-to-end delivery (FR-05)
+
+**Setup:** RabbitMQ, ExchangeApp, and TradingGuiApp all running.
+Browser opened at http://localhost:5219.
+
+**Steps:**
+1. Tia BUY XYZ 100 @ $99.00
+2. David SELL XYZ 100 @ $99.00 (matches step 1)
+
+**Expected:** Within ~1 second of the matching SELL, the browser
+page updates without refresh: the latest-trade panel shows the new
+price, buyer, seller, quantity, and time. A row appears in the
+recent-trades list. The "Live updates connected" status indicator
+remains visible.
+
+**Actual:** Pass. Page updated to show $99.00 with Tia / David /
+100 / 3:46:29 PM. Recent-trades list received "Tia bought from
+David | XYZ | 100 @ $99.00". No page refresh required.
+
+**Note:** The single-stock A1 frontend correctly receives and
+displays the Stock field from the broadcast, but the page header
+still reads "XYZ Corp - Latest Trade" hardcoded. The multi-stock
+dashboard rewrite in Stage 4 replaces this layout entirely.
+
+**Evidence:** evidence/stage-3-browser-signalr.png
