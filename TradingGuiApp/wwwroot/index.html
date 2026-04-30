@@ -2,127 +2,422 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>XYZ Exchange Dashboard</title>
+    <title>XYZ Exchange — PBT205 Trading System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
     <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
             background: #0f172a;
             color: #f8fafc;
+            min-height: 100vh;
+            line-height: 1.5;
         }
 
-        .card {
-            max-width: 700px;
-            margin: 0 auto;
+        /* ── HEADER ── */
+        header {
             background: #1e293b;
+            border-bottom: 1px solid #334155;
+            padding: 20px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .header-left h1 { font-size: 22px; font-weight: 600; }
+        .header-left p  { font-size: 13px; color: #64748b; margin-top: 2px; }
+        .header-right   { display: flex; align-items: center; gap: 16px; font-size: 12px; color: #475569; }
+
+        /* connection pill */
+        .conn-pill {
+            display: flex; align-items: center; gap: 8px;
+            background: #0f172a; border: 1px solid #334155;
+            padding: 6px 12px; border-radius: 999px; font-size: 12px;
+        }
+        .conn-dot { width: 8px; height: 8px; border-radius: 50%; background: #475569; }
+        .conn-pill.up   .conn-dot { background: #22c55e; }
+        .conn-pill.warn .conn-dot { background: #f59e0b; }
+        .conn-pill.down .conn-dot { background: #ef4444; }
+        .conn-pill.up   .conn-text { color: #4ade80; }
+        .conn-pill.warn .conn-text { color: #fbbf24; }
+        .conn-pill.down .conn-text { color: #f87171; }
+
+        /* ── PAGE LAYOUT ── */
+        main { max-width: 1200px; margin: 0 auto; padding: 32px; }
+        section { margin-bottom: 48px; }
+        section h2 {
+            font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px;
+            color: #94a3b8; margin-bottom: 16px;
+        }
+
+        /* ── SHOWCASE ── */
+        .showcase-card {
+            background: #1e293b;
+            border: 1px solid #334155;
             border-radius: 16px;
-            padding: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            padding: 24px 28px;
+        }
+        .showcase-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .showcase-card p  { font-size: 14px; color: #94a3b8; }
+        .showcase-tags    { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+        .tag {
+            font-size: 11px; padding: 3px 9px; border-radius: 6px;
+            background: #0f172a; color: #94a3b8; border: 1px solid #334155;
         }
 
-        h1 {
-            margin-top: 0;
-            font-size: 32px;
+        /* ── LAUNCHER GRID ── */
+        .launcher-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+        }
+        .launcher-card {
+            background: #1e293b; border: 1px solid #334155; border-radius: 12px;
+            padding: 16px 20px;
+            display: flex; flex-direction: column; gap: 8px;
+            transition: border-color .2s, box-shadow .2s;
+        }
+        .launcher-card:hover { border-color: #38bdf8; box-shadow: 0 0 24px rgba(56,189,248,0.08); }
+        .launcher-card .label   { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #64748b; }
+        .launcher-card .title   { font-size: 15px; font-weight: 600; }
+        .launcher-card .desc    { font-size: 12px; color: #94a3b8; flex: 1; }
+        .launcher-card a {
+            color: #38bdf8; text-decoration: none; font-size: 13px; font-weight: 500;
+        }
+        .launcher-card a:hover { color: #7dd3fc; }
+
+        /* ── PRICE TILES ── */
+        .price-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;
+        }
+        .price-tile {
+            background: #1e293b; border: 1px solid #334155; border-radius: 12px;
+            padding: 20px 24px;
+            transition: border-color .25s, box-shadow .25s;
+        }
+        .price-tile.flash { border-color: #38bdf8; box-shadow: 0 0 32px rgba(56,189,248,0.15); }
+        .price-tile .symbol { font-size: 13px; font-weight: 600; color: #94a3b8; letter-spacing: 1px; }
+        .price-tile .price  { font-size: 32px; font-weight: 700; color: #f8fafc; margin-top: 4px; }
+        .price-tile .price.empty { color: #475569; font-size: 16px; font-weight: 500; }
+        .price-tile .meta   { font-size: 12px; color: #64748b; margin-top: 8px; display: flex; gap: 12px; }
+        .price-tile .change.up    { color: #4ade80; }
+        .price-tile .change.down  { color: #f87171; }
+        .price-tile .change.flat  { color: #64748b; }
+
+        /* ── HISTORY ── */
+        .history-controls {
+            display: flex; align-items: center; gap: 16px; margin-bottom: 16px;
+        }
+        .filter-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+        .pill {
+            background: #1e293b; border: 1px solid #334155; color: #94a3b8;
+            padding: 5px 12px; border-radius: 999px; font-size: 12px;
+            cursor: pointer; transition: all .15s;
+        }
+        .pill:hover { border-color: #475569; color: #cbd5e1; }
+        .pill.active { background: #38bdf8; color: #0f172a; border-color: #38bdf8; font-weight: 600; }
+
+        .history-list {
+            background: #1e293b; border: 1px solid #334155; border-radius: 12px;
+            max-height: 480px; overflow-y: auto;
+        }
+        .history-row {
+            display: grid; grid-template-columns: 90px 60px 1fr 80px 90px;
+            gap: 12px; padding: 12px 20px; font-size: 13px;
+            border-bottom: 1px solid #283348;
+            align-items: center;
+        }
+        .history-row:last-child { border-bottom: none; }
+        .history-row .time   { color: #64748b; font-variant-numeric: tabular-nums; }
+        .history-row .stock  {
+            color: #38bdf8; font-weight: 600; font-size: 11px;
+            background: #0f172a; padding: 2px 6px; border-radius: 4px;
+            text-align: center; letter-spacing: 0.5px;
+        }
+        .history-row .traders { color: #cbd5e1; }
+        .history-row .qty    { color: #94a3b8; text-align: right; font-variant-numeric: tabular-nums; }
+        .history-row .price  { color: #f8fafc; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+        .history-empty {
+            padding: 32px; text-align: center; color: #64748b; font-size: 13px;
         }
 
-        .price {
-            font-size: 56px;
-            font-weight: bold;
-            margin: 20px 0;
-            color: #38bdf8;
+        /* ── FOOTER ── */
+        footer {
+            background: #1e293b; border-top: 1px solid #334155;
+            padding: 16px 32px; font-size: 12px; color: #475569;
+            text-align: center;
         }
 
-        .row {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-
-        .label {
-            font-weight: bold;
-            display: inline-block;
-            width: 120px;
-        }
-
-        .status {
-            margin-top: 16px;
-            color: #94a3b8;
-            font-size: 14px;
-        }
-
-        .recent {
-            margin-top: 30px;
-        }
-
-        .recent h2 {
-            font-size: 22px;
-            margin-bottom: 12px;
-        }
-
-        .trade {
-            padding: 10px 12px;
-            border-radius: 10px;
-            background: #334155;
-            margin-bottom: 10px;
+        @media (max-width: 800px) {
+            .launcher-grid { grid-template-columns: 1fr; }
+            .history-row { grid-template-columns: 70px 50px 1fr 70px; gap: 8px; padding: 10px 14px; }
+            .history-row .qty { display: none; }
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>XYZ Corp - Latest Trade</h1>
-        <div class="price" id="price">$--.--</div>
 
-        <div class="row"><span class="label">Buyer:</span> <span id="buyer">-</span></div>
-        <div class="row"><span class="label">Seller:</span> <span id="seller">-</span></div>
-        <div class="row"><span class="label">Quantity:</span> <span id="quantity">-</span></div>
-        <div class="row"><span class="label">Time:</span> <span id="time">-</span></div>
-
-        <div class="status" id="status">Waiting for trades...</div>
-
-        <div class="recent">
-            <h2>Recent Trades</h2>
-            <div id="recentTrades"></div>
-        </div>
+<header>
+    <div class="header-left">
+        <h1>XYZ Exchange</h1>
+        <p>Multi-stock trading dashboard · PBT205 Assessment 3</p>
     </div>
+    <div class="header-right">
+        <div class="conn-pill" id="conn-pill">
+            <div class="conn-dot"></div>
+            <span class="conn-text" id="conn-text">Connecting…</span>
+        </div>
+        <div>Group 3 · Tia Darvell · David Ristevski</div>
+    </div>
+</header>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
-    <script>
-        const priceEl = document.getElementById("price");
-        const buyerEl = document.getElementById("buyer");
-        const sellerEl = document.getElementById("seller");
-        const quantityEl = document.getElementById("quantity");
-        const timeEl = document.getElementById("time");
-        const statusEl = document.getElementById("status");
-        const recentTradesEl = document.getElementById("recentTrades");
+<main>
 
-        const connection = new signalR.HubConnectionBuilder()
-            .withUrl("/tradehub")
-            .build();
+    <!-- ── SHOWCASE ── -->
+    <section>
+        <h2>About this project</h2>
+        <div class="showcase-card">
+            <h3>Distributed message-driven trading system</h3>
+            <p>
+                A simple stock exchange built on RabbitMQ middleware. SendOrderApp
+                publishes orders to the <code>orders</code> fanout exchange; ExchangeApp
+                matches buy and sell orders against an in-memory order book and publishes
+                completed trades to the <code>trades</code> exchange; this dashboard
+                subscribes to both via SignalR for live per-stock updates without page
+                refresh. Multiple stocks trade in parallel through isolated order books.
+            </p>
+            <div class="showcase-tags">
+                <span class="tag">C# / .NET 10</span>
+                <span class="tag">RabbitMQ Fanout</span>
+                <span class="tag">SignalR</span>
+                <span class="tag">Multi-stock</span>
+                <span class="tag">Docker</span>
+                <span class="tag">A2 FR-01 / FR-05</span>
+            </div>
+        </div>
+    </section>
 
-        connection.on("ReceiveTrade", function (trade) {
-            priceEl.textContent = `$${Number(trade.price).toFixed(2)}`;
-            buyerEl.textContent = trade.buyer;
-            sellerEl.textContent = trade.seller;
-            quantityEl.textContent = trade.quantity;
-            timeEl.textContent = new Date(trade.executedAt).toLocaleTimeString();
-            statusEl.textContent = "Live updates connected";
+    <!-- ── LAUNCHER ── -->
+    <section>
+        <h2>Quick links</h2>
+        <div class="launcher-grid">
+            <div class="launcher-card">
+                <span class="label">Middleware</span>
+                <span class="title">RabbitMQ Management UI</span>
+                <span class="desc">Inspect exchanges, queues, and live message rates. Login: guest / guest.</span>
+                <a href="http://localhost:15672" target="_blank">Open at :15672 →</a>
+            </div>
+            <div class="launcher-card">
+                <span class="label">Repository</span>
+                <span class="title">Source code</span>
+                <span class="desc">Project on GitHub — README, architecture, and per-stage commits.</span>
+                <a href="#" target="_blank">View on GitHub →</a>
+            </div>
+            <div class="launcher-card">
+                <span class="label">Documentation</span>
+                <span class="title">A3 Report</span>
+                <span class="desc">Post-implementation report with test results and reflection.</span>
+                <a href="#" target="_blank">Read the report →</a>
+            </div>
+        </div>
+    </section>
 
-            const item = document.createElement("div");
-            item.className = "trade";
-            item.textContent = `${trade.buyer} bought from ${trade.seller} | ${trade.stock} | ${trade.quantity} @ $${Number(trade.price).toFixed(2)}`;
-            recentTradesEl.prepend(item);
+    <!-- ── PRICE TILES ── -->
+    <section>
+        <h2>Live prices</h2>
+        <div class="price-grid" id="price-grid">
+            <!-- tiles injected by JS -->
+        </div>
+    </section>
 
-            while (recentTradesEl.children.length > 5) {
-                recentTradesEl.removeChild(recentTradesEl.lastChild);
+    <!-- ── HISTORY ── -->
+    <section>
+        <h2>Recent trades</h2>
+        <div class="history-controls">
+            <div class="filter-pills" id="filter-pills">
+                <!-- pills injected by JS -->
+            </div>
+        </div>
+        <div class="history-list" id="history-list">
+            <div class="history-empty">Awaiting first trade…</div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    PBT205 Assessment 3 · Stage 4 dashboard · RabbitMQ on :5672 · Management UI on :15672
+</footer>
+
+<script>
+    // ─── CONFIG ─────────────────────────────────────────────────────────
+    // TODO (FR-01 / TR-07): replace with a SignalR call to GetStocks() so
+    // the configured stock list is read from tradingsystem.config.json
+    // rather than hardcoded here. See A2 §04.2 TR-07.
+    const STOCKS = ["XYZ", "ABC", "DEF"];
+
+    // ─── STATE ──────────────────────────────────────────────────────────
+    const state = {
+        latest: {},          // { XYZ: Trade, ABC: Trade, ... } — newest per stock
+        previous: {},        // { XYZ: previousPrice, ... } — for change indicator
+        history: [],         // newest first
+        filter: "ALL"
+    };
+
+    // ─── DOM HELPERS ────────────────────────────────────────────────────
+    const $ = (id) => document.getElementById(id);
+    const fmtPrice = (n) => `$${n.toFixed(2)}`;
+    const fmtTime  = (iso) => {
+        const d = new Date(iso);
+        return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    };
+
+    // ─── RENDER ─────────────────────────────────────────────────────────
+    function renderTiles() {
+        const grid = $("price-grid");
+        grid.innerHTML = "";
+        for (const symbol of STOCKS) {
+            const trade = state.latest[symbol];
+            const prev  = state.previous[symbol];
+            let changeHtml = "";
+            if (trade && prev != null && prev !== trade.Price) {
+                const pct = ((trade.Price - prev) / prev) * 100;
+                const dir = pct >= 0 ? "up" : "down";
+                const arrow = pct >= 0 ? "↑" : "↓";
+                changeHtml = `<span class="change ${dir}">${arrow} ${Math.abs(pct).toFixed(2)}%</span>`;
             }
-        });
 
-        connection.start()
-            .then(() => statusEl.textContent = "Connected. Waiting for trades...")
-            .catch(err => {
-                console.error(err.toString());
-                statusEl.textContent = "Connection failed";
-            });
-    </script>
+            const tile = document.createElement("div");
+            tile.className = "price-tile";
+            tile.id = `tile-${symbol}`;
+            if (trade) {
+                tile.innerHTML = `
+                    <div class="symbol">${symbol}</div>
+                    <div class="price">${fmtPrice(trade.Price)}</div>
+                    <div class="meta">
+                        <span>${fmtTime(trade.ExecutedAt)}</span>
+                        ${changeHtml}
+                    </div>`;
+            } else {
+                tile.innerHTML = `
+                    <div class="symbol">${symbol}</div>
+                    <div class="price empty">Awaiting first trade</div>
+                    <div class="meta"><span>—</span></div>`;
+            }
+            grid.appendChild(tile);
+        }
+    }
+
+    function renderPills() {
+        const wrap = $("filter-pills");
+        wrap.innerHTML = "";
+        const all = ["ALL", ...STOCKS];
+        for (const symbol of all) {
+            const pill = document.createElement("button");
+            pill.className = "pill" + (state.filter === symbol ? " active" : "");
+            pill.textContent = symbol === "ALL" ? "All" : symbol;
+            pill.onclick = () => { state.filter = symbol; renderPills(); renderHistory(); };
+            wrap.appendChild(pill);
+        }
+    }
+
+    function renderHistory() {
+        const list = $("history-list");
+        const filtered = state.filter === "ALL"
+            ? state.history
+            : state.history.filter(t => t.Stock === state.filter);
+
+        if (filtered.length === 0) {
+            list.innerHTML = `<div class="history-empty">
+                ${state.filter === "ALL" ? "Awaiting first trade…" : `No ${state.filter} trades yet.`}
+            </div>`;
+            return;
+        }
+
+        list.innerHTML = filtered.slice(0, 50).map(t => `
+            <div class="history-row">
+                <span class="time">${fmtTime(t.ExecutedAt)}</span>
+                <span class="stock">${t.Stock}</span>
+                <span class="traders">${t.Buyer} ↔ ${t.Seller}</span>
+                <span class="qty">${t.Quantity}</span>
+                <span class="price">${fmtPrice(t.Price)}</span>
+            </div>`).join("");
+    }
+
+    function flashTile(symbol) {
+        const tile = $(`tile-${symbol}`);
+        if (!tile) return;
+        tile.classList.add("flash");
+        setTimeout(() => tile.classList.remove("flash"), 600);
+    }
+
+    // ─── CONNECTION STATUS ──────────────────────────────────────────────
+    function setStatus(state, label) {
+        const pill = $("conn-pill");
+        pill.classList.remove("up", "warn", "down");
+        pill.classList.add(state);
+        $("conn-text").textContent = label;
+    }
+
+    // ─── SIGNALR ────────────────────────────────────────────────────────
+    const conn = new signalR.HubConnectionBuilder()
+        .withUrl("/tradehub")
+        .withAutomaticReconnect()
+        .build();
+
+    conn.on("ReceiveTrade", (trade) => {
+        // trade has { Stock, Buyer, Seller, Quantity, Price, ExecutedAt }
+        if (state.latest[trade.Stock]) {
+            state.previous[trade.Stock] = state.latest[trade.Stock].Price;
+        }
+        state.latest[trade.Stock] = trade;
+        state.history.unshift(trade);
+        if (state.history.length > 200) state.history.length = 200;
+        renderTiles();
+        renderHistory();
+        flashTile(trade.Stock);
+    });
+
+    conn.onreconnecting(() => setStatus("warn", "Reconnecting…"));
+    conn.onreconnected(()  => { setStatus("up", "Connected"); loadInitial(); });
+    conn.onclose(()        => setStatus("down", "Disconnected"));
+
+    async function loadInitial() {
+        try {
+            const latest  = await conn.invoke("GetLatestPrices");
+            const history = await conn.invoke("GetHistory", null, 50);
+
+            // latest is { XYZ: Trade, ABC: Trade } from C# IReadOnlyDictionary
+            for (const [symbol, trade] of Object.entries(latest || {})) {
+                state.latest[symbol] = trade;
+            }
+            state.history = history || [];
+            renderTiles();
+            renderHistory();
+        } catch (e) {
+            console.error("Initial load failed:", e);
+        }
+    }
+
+    async function start() {
+        try {
+            await conn.start();
+            setStatus("up", "Connected");
+            await loadInitial();
+        } catch (e) {
+            setStatus("down", "Disconnected");
+            console.error("SignalR connection failed:", e);
+            setTimeout(start, 5000);
+        }
+    }
+
+    // ─── BOOT ───────────────────────────────────────────────────────────
+    renderTiles();
+    renderPills();
+    start();
+</script>
+
 </body>
 </html>

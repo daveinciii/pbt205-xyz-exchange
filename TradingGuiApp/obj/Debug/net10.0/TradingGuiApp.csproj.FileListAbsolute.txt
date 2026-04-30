@@ -66,7 +66,6 @@ C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/ref
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/scopedcss/bundle/TradingGuiApp.styles.css
-/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/compressed/30vr4tla9t-{0}-trntq98inp-trntq98inp.gz
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.build.json
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.build.json.cache
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/staticwebassets.development.json
@@ -78,3 +77,4 @@ C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/ref
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.pdb
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.genruntimeconfig.cache
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/ref/TradingGuiApp.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/compressed/30vr4tla9t-{0}-e4a4djnj28-e4a4djnj28.gz

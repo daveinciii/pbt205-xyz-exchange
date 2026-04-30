@@ -93,3 +93,39 @@ still reads "XYZ Corp - Latest Trade" hardcoded. The multi-stock
 dashboard rewrite in Stage 4 replaces this layout entirely.
 
 **Evidence:** evidence/stage-3-browser-signalr.png
+
+## Stage 4 — Multi-stock dashboard (FR-01, FR-05, FR-07)
+
+**Setup:** RabbitMQ, ExchangeApp, and TradingGuiApp all running. Dashboard
+opened at http://localhost:5219. Three matching pairs submitted via
+SendOrderApp across two stocks.
+
+**Steps:**
+1. Initial page load with no trades — dashboard renders empty state
+2. Tia BUY XYZ @ $50 / David SELL XYZ @ $50 (matches, first XYZ trade)
+3. Eve BUY ABC @ $25 / Mark SELL ABC @ $25 (matches, first ABC trade)
+4. Tia BUY XYZ @ $60 / David SELL XYZ @ $60 (matches, second XYZ trade)
+5. Click XYZ filter pill in Recent Trades section
+
+**Expected:**
+- Empty state shows three "Awaiting first trade" tiles and an empty
+  history with All/XYZ/ABC/DEF filter pills
+- After step 2: XYZ tile populates with $50.00 and the trade appears
+  in history
+- After step 3: ABC tile populates with $25.00, history shows both
+  trades newest first
+- After step 4: XYZ tile updates to $60.00, change indicator appears
+  showing ↑ 20.00% green; history shows three trades
+- After step 5: Recent trades list shows only the two XYZ entries
+
+**Actual:** Pass on all five steps. Connection pill remained green
+throughout (SignalR stayed connected). DEF tile correctly remained in
+empty state because no DEF trades fired. Change indicator computed
+correctly from prior in-memory state.
+
+**Evidence:**
+- evidence/stage-4-dashboard-empty.png — initial render with no trades
+- evidence/stage-4-dashboard-populated.png — three trades visible with
+  XYZ change indicator
+- evidence/stage-4-history-filter.png — XYZ filter applied, only XYZ
+  rows visible
