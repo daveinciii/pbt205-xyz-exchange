@@ -1,15 +1,51 @@
-version: '3.8'
-
 services:
+
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq
+    hostname: rabbitmq
     ports:
       - "5672:5672"
       - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_running"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   exchangeapp:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: exchangeapp
+    working_dir: /app/exchange
+    command: ["dotnet", "ExchangeApp.dll", "rabbitmq"]
     depends_on:
-      - rabbitmq
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      - Database__Path=/app/data/trading.db
+    volumes:
+      - tradingdata:/app/data
+
+  tradinggui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tradinggui
+    working_dir: /app/gui
+    command: ["dotnet", "TradingGuiApp.dll"]
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    ports:
+      - "5219:8080"
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - RabbitMQ__Endpoint=rabbitmq:5672
+      - Database__Path=/app/data/trading.db
+    volumes:
+      - tradingdata:/app/data
+
+volumes:
+  tradingdata:
