@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/ExchangeApp.csproj": {}
+    "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\ExchangeApp\\ExchangeApp.csproj": {}
   },
   "projects": {
-    "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/ExchangeApp.csproj": {
+    "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\ExchangeApp\\ExchangeApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/ExchangeApp.csproj",
+        "projectUniqueName": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\ExchangeApp\\ExchangeApp.csproj",
         "projectName": "ExchangeApp",
-        "projectPath": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/ExchangeApp.csproj",
-        "packagesPath": "/Users/tiadarvell/.nuget/packages/",
-        "outputPath": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/ExchangeApp/obj/",
+        "projectPath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\ExchangeApp\\ExchangeApp.csproj",
+        "packagesPath": "C:\\Users\\daver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\ExchangeApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/tiadarvell/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\daver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/TradingCore.csproj": {
-                "projectPath": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/TradingCore.csproj"
+              "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj": {
+                "projectPath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj"
               }
             }
           }
@@ -63,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -341,22 +348,29 @@
         }
       }
     },
-    "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/TradingCore.csproj": {
+    "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/TradingCore.csproj",
+        "projectUniqueName": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj",
         "projectName": "TradingCore",
-        "projectPath": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/TradingCore.csproj",
-        "packagesPath": "/Users/tiadarvell/.nuget/packages/",
-        "outputPath": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/",
+        "projectPath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj",
+        "packagesPath": "C:\\Users\\daver\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/tiadarvell/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\daver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -381,6 +395,16 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.7, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.4, )"
@@ -406,7 +430,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
