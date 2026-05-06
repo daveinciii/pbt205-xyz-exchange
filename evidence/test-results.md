@@ -197,3 +197,79 @@ TradeHub history methods (Stage 3.1). It also incidentally demonstrates
 that trades persist across multiple development sessions — three of the
 loaded trades originated from sessions prior to this test run, evidence
 of true on-disk persistence rather than process-lifetime caching.
+
+
+## Stage 6.1 — Build, test, and orchestration verification (TR-06)
+
+**Setup:** Clean project checkout. No containers running. No prior build
+artifacts. All commands run from the project root.
+
+### 6.1a — dotnet build
+
+**Expected:** All five projects compile against .NET 10.0 with 0 errors
+and 0 warnings.
+
+**Actual:** Pass. Build succeeded in 6.4s. All five projects compiled
+cleanly:
+- TradingCore (3.1s)
+- SendOrderApp (0.5s)
+- ExchangeApp (0.5s)
+- TradingCore.Tests (1.2s)
+- TradingGuiApp (2.0s)
+
+0 errors, 0 warnings.
+
+**Evidence:** evidence/stage-6-build-clean.png
+
+### 6.1b — dotnet test
+
+**Expected:** All unit tests pass with 0 failures and 0 skipped.
+
+**Actual:** Pass. Test summary: total 6, failed 0, succeeded 6,
+skipped 0, duration 1.0s. xUnit v3.1.4 via TradingCore.Tests against
+.NET 10.0. Build succeeded in 1.9s.
+
+**Evidence:** evidence/stage-6-tests-passing.png
+
+### 6.1c — docker compose up (clean state)
+
+**Expected:** All three containers start in dependency order and reach
+their ready states without manual intervention.
+
+**Actual:** Pass. Sequence observed:
+1. rabbitmq reached "Server startup complete; 5 plugins started" with
+   TCP listener on 5672 and Management UI on 15672 (4859 ms startup).
+   Container reported Healthy twice before dependent services started.
+2. exchangeapp started after rabbitmq healthy: loaded 3 stocks
+   (XYZ, ABC, DEF), connected to rabbitmq:5672, subscribed to 'orders'
+   topic, DATABASE box showed "SQLite path: trading.db / Historical
+   trades loaded: 0" (clean cold start), reached EXCHANGE READY state.
+3. tradinggui started: loaded 3 stocks, connected to rabbitmq:5672,
+   subscribed to 'trades' topic, web host listening on
+   http://[::]:8080, reached GUI READY state.
+
+**Evidence:** evidence/tr-06-docker-compose-up.png
+
+### 6.1d — End-to-end smoke test through orchestrated stack
+
+**Setup:** Full docker compose stack running. SendOrderApp invoked from
+host against localhost.
+
+**Steps:**
+1. `dotnet run --project SendOrderApp -- Tia localhost XYZ BUY 100 50.00`
+2. `dotnet run --project SendOrderApp -- David localhost XYZ SELL 100 50.00`
+3. Browser opened at http://localhost:5219
+
+**Expected:** Both orders publish to the 'orders' exchange, ExchangeApp
+matches them, publishes the completed trade to 'trades', and the
+dashboard reflects the result live without page refresh.
+
+**Actual:** Pass. Both SendOrderApp invocations logged ORDER CREATED,
+RABBITMQ Connected, Published to 'orders' topic, and SUBMITTED boxes
+with correct parameters (Tia BUY 100 XYZ @ $50.00 at 03:46:14 UTC;
+David SELL 100 XYZ @ $50.00 at 03:46:16 UTC). Dashboard updated live:
+XYZ price tile showed $50.00 at 01:46:16 PM; recent trades list showed
+Tia ↔ David, XYZ, 100, $50.00. ABC and DEF tiles correctly remained in
+empty state. SignalR connection pill showed Connected throughout.
+
+**Evidence:** evidence/tr-06-docker-compose-trade.png

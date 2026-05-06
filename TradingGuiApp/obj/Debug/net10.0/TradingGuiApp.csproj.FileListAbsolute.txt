@@ -76,7 +76,6 @@ C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/ref
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.pdb
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/TradingGuiApp.genruntimeconfig.cache
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/ref/TradingGuiApp.dll
-/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/compressed/30vr4tla9t-{0}-e4a4djnj28-e4a4djnj28.gz
 C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/compressed/30vr4tla9t-{0}-r753inlk2z-r753inlk2z.gz
 C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Microsoft.Data.Sqlite.dll
 C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/Microsoft.EntityFrameworkCore.dll
@@ -142,3 +141,4 @@ C:/Users/daver/Documents/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/run
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/bin/Debug/net10.0/runtimes/win-x86/native/e_sqlite3.dll
+/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingGuiApp/obj/Debug/net10.0/compressed/30vr4tla9t-{0}-a602wfprek-a602wfprek.gz
