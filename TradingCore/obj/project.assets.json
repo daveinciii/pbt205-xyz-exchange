@@ -2997,32 +2997,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daver\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/tiadarvell/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj",
+      "projectUniqueName": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/TradingCore.csproj",
       "projectName": "TradingCore",
-      "projectPath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\TradingCore.csproj",
-      "packagesPath": "C:\\Users\\daver\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daver\\Documents\\pbt205-xyz-exchange\\TradingCore\\obj\\",
+      "projectPath": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/TradingCore.csproj",
+      "packagesPath": "/Users/tiadarvell/.nuget/packages/",
+      "outputPath": "/Users/tiadarvell/Desktop/g i t h u b/pbt205-xyz-exchange/TradingCore/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\daver\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/tiadarvell/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3082,7 +3074,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
