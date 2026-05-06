@@ -68,6 +68,7 @@ exchange → ExchangeApp → matched → 'trades' exchange → GUI listener
 
 **Evidence:** evidence/stage-3-trade-broadcast.png
 
+
 ## Stage 3.2 — SignalR end-to-end delivery (FR-05)
 
 **Setup:** RabbitMQ, ExchangeApp, and TradingGuiApp all running.
@@ -93,6 +94,7 @@ still reads "XYZ Corp - Latest Trade" hardcoded. The multi-stock
 dashboard rewrite in Stage 4 replaces this layout entirely.
 
 **Evidence:** evidence/stage-3-browser-signalr.png
+
 
 ## Stage 4 — Multi-stock dashboard (FR-01, FR-05, FR-07)
 
@@ -129,3 +131,69 @@ correctly from prior in-memory state.
   XYZ change indicator
 - evidence/stage-4-history-filter.png — XYZ filter applied, only XYZ
   rows visible
+
+
+## TC-09 — SQLite persistence across ExchangeApp restart (FR-06, TR-04)
+
+**Setup:** Clean RabbitMQ broker via Docker. ExchangeApp, TradingGuiApp,
+and browser dashboard all running. trading.db SQLite file present from
+prior development sessions.
+
+**Steps:**
+1. Submit three matching pairs via SendOrderApp:
+   - Tia BUY XYZ 100 @ $50.00 + David SELL XYZ 100 @ $50.00
+   - Eve BUY ABC 100 @ $25.00 + Mark SELL ABC 100 @ $25.00
+   - Tia BUY XYZ 100 @ $60.00 + David SELL XYZ 100 @ $60.00
+2. Confirm dashboard shows all three trades and the XYZ tile reflects
+   the latest $60.00 price with change indicator
+3. Press Ctrl+C in the ExchangeApp terminal to shut it down cleanly
+4. Refresh the dashboard browser tab while ExchangeApp is offline
+5. Restart ExchangeApp via `dotnet run --project ExchangeApp -- localhost`
+6. Submit one further matching pair to confirm post-restart writes also
+   persist:
+   - Sara BUY DEF 100 @ $100.00 + Liam SELL DEF 100 @ $100.00
+
+**Expected:**
+- After step 4 (broker offline, dashboard refreshed): the three
+  pre-restart trades remain visible because the dashboard reads from
+  the persistent SQLite store via the hub, not from any in-memory cache.
+- After step 5 (ExchangeApp restart): the DATABASE startup box reports a
+  non-zero count of historical trades loaded from `trading.db`, proving
+  ExchangeApp re-reads the DB on cold start.
+- After step 6: the new DEF trade appends to the same persistent
+  history, visible alongside the pre-restart entries in one continuous
+  dashboard view.
+
+**Actual:** Pass on all six steps.
+- ExchangeApp shutdown was clean ("XYZ Exchange closing connection..."
+  box visible).
+- Dashboard refreshed while ExchangeApp was offline rendered XYZ at
+  $60.00 with the +20.00% change indicator, ABC at $25.00, and seven
+  rows in the recent-trades list — proving the hub returned data from
+  SQLite without any live broadcast source connected.
+- ExchangeApp restart logged: "DATABASE — SQLite path: trading.db /
+  Historical trades loaded: 8" confirming the persistent ledger held
+  trades from this session and prior development sessions.
+- Post-restart DEF trade matched cleanly (TRADE EXECUTED Sara ↔ Liam at
+  $100.00) and appeared at the top of the dashboard's recent-trades
+  list alongside all earlier entries.
+
+**Evidence:**
+- evidence/tc-09-before-restart.png — SendOrderApp terminal showing the
+  three pre-restart matching pairs being submitted
+- evidence/tc-09-after-restart.png — dashboard rendering the
+  pre-restart trades while ExchangeApp is offline (proves the hub is
+  DB-backed, not relying on the in-memory ring buffer)
+- evidence/tc-09-restart-loaded.png — ExchangeApp startup output
+  immediately following the restart, showing the DATABASE box with
+  "Historical trades loaded: 8"
+- evidence/tc-09-post-restart-trade.png — dashboard after the
+  post-restart DEF trade, showing pre- and post-restart trades in one
+  continuous history
+
+**Note:** This test simultaneously validates FR-06 (persistent trade
+history), TR-04 (SQLite via EF Core), and the DB-backed wiring of the
+TradeHub history methods (Stage 3.1). It also incidentally demonstrates
+that trades persist across multiple development sessions — three of the
+loaded trades originated from sessions prior to this test run, evidence
+of true on-disk persistence rather than process-lifetime caching.
